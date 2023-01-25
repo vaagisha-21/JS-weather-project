@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Map</title>
+    <link rel="stylesheet" href="weather.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="weather2.js"></script> -->
+</head>
+
+
+<body>
+    <div class="p-3 wrapper text-white mt-3">
+        <h1 class="text-center sm:text-2xl mb-6 p-2">WELCOME TO WEATHER MAP</h1>
+        <div class="shape shape-1 h-28 sm:h-44 w-28 sm:w-44 -right-4 sm:-right-24 top-11 sm:top-7"></div>
+        <div class="shape shape-2 h-36 w-36 -bottom-16 -left-10"></div>
+        <div class="container flex flex-col items-center">
+            <label for="countries" class="block mb-2 pt-3 text-lg font-medium text-white">ENTER THE LOCATION</label>
+            <div class="p-5 w-full">
+                <input class="w-full py-2 px-3 bg-transparent border-b text-white placeholder-white" id="location" type="text" placeholder="Location">
+                <div class="w-full flex">
+                    <button class="bg-transparent w-3/4 my-3 mr-3 hover:bg-white hover:text-[#1a4357] font-semibold text-white py-1 px-4 border border-white hover:border-[#1a4357] rounded" onclick="weatherDetails()">Weather Details</button>
+                    <button class="bg-transparent w-1/4 my-3 hover:bg-white hover:text-[#1a4357] font-semibold text-white py-1 px-4 border border-white hover:border-[#1a4357] rounded" onclick="timeDetails()">Date & Time</button>
+                </div>
+            </div>
+            <div id="result" class="w-full p-2">
+            </div>
+        </div>
+    </div>
+    <script src="weather2.js"></script>
+</body>
+</html>
